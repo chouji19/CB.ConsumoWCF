@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\ServiciosBancarios_hemas_datacontract_org_2004_07_CEB_ProcesosBancarios_Modelos.xsd" namespace="http://schemas.datacontract.org/2004/07/CEB.ProcesosBancarios.Modelos" />
+  <xs:element name="ObtenerCuentasPorCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CEB.ProcesosBancarios.Modelos" minOccurs="0" name="cliente" nillable="true" type="q1:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCuentasPorClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CEB.ProcesosBancarios.Modelos" minOccurs="0" name="ObtenerCuentasPorClienteResult" nillable="true" type="q2:CuentaResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

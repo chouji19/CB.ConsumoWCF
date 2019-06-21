@@ -1,0 +1,556 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="5bc6dc85-3da0-4eb2-9e5b-0afa930f6c74" LowerBound="1.1" HigherBound="130.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="CB.ConsumoWCF.Orquestaciones" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="0393ae78-33ca-4c8e-9336-cec85d1b3c1c" ParentLink="Module_PortType" LowerBound="24.1" HigherBound="31.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IServiciosBancarios&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IServiciosBancarios" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="83b3fdf5-ebe2-4293-a240-708bfbd21d5b" ParentLink="PortType_OperationDeclaration" LowerBound="26.1" HigherBound="30.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;ObtenerCuentasPorCliente&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="ObtenerCuentasPorCliente" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4f1e07d5-e691-4849-9b48-979a230eaf44" ParentLink="OperationDeclaration_FaultMessageRef" LowerBound="28.132" HigherBound="28.158">
+                    <om:Property Name="Ref" Value="CB.ConsumoWCF.Orquestaciones.FaultMessageType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Fault_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="3cc829c9-61c7-4ef5-a77b-a520fd3bbf02" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="28.72" HigherBound="28.130">
+                    <om:Property Name="Ref" Value="CB.ConsumoWCF.Orquestaciones.IServiciosBancarios_ObtenerCuentasPorCliente_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IServiciosBancarios_ObtenerCuentasPorCliente_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IServiciosBancarios/ObtenerCuentasPorClienteResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="86ea54ac-69d8-4494-984a-8b8ec735294e" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="28.13" HigherBound="28.70">
+                    <om:Property Name="Ref" Value="CB.ConsumoWCF.Orquestaciones.IServiciosBancarios_ObtenerCuentasPorCliente_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IServiciosBancarios_ObtenerCuentasPorCliente_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IServiciosBancarios/ObtenerCuentasPorCliente&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f8d48d1b-c006-4a2d-a0fa-4c952f4327ff" ParentLink="Module_PortType" LowerBound="31.1" HigherBound="38.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CuentaServicePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="0d08468b-29ac-4e2c-844a-3d35fdc81579" ParentLink="PortType_OperationDeclaration" LowerBound="33.1" HigherBound="37.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="2c40bd14-2457-42ae-bfdc-3ecade4358bd" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="35.13" HigherBound="35.22">
+                    <om:Property Name="Ref" Value="CB.ConsumoWCF.Orquestaciones.CuentaReq" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="501b1b79-81a6-424c-a1cd-627a941ef79e" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="35.24" HigherBound="35.34">
+                    <om:Property Name="Ref" Value="CB.ConsumoWCF.Orquestaciones.CuentaResp" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="254fa0bf-868c-40df-aebc-cbc291183848" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IServiciosBancarios_ObtenerCuentasPorCliente_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IServiciosBancarios_ObtenerCuentasPorCliente_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="8c06ba42-e231-4cbf-92c7-364f9fbc6414" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="CB.ConsumoWCF.Esquemas.ServiciosBancarios_tempuri_org.ObtenerCuentasPorCliente" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="e881049e-4ae1-4c44-a5b6-3d3ffe3eeb41" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IServiciosBancarios_ObtenerCuentasPorCliente_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IServiciosBancarios_ObtenerCuentasPorCliente_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="2b370883-0923-4cf8-be9f-c1b2e0fb54a7" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="CB.ConsumoWCF.Esquemas.ServiciosBancarios_tempuri_org.ObtenerCuentasPorClienteResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="a1ca9da1-642e-43c5-92ca-d63998823fee" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CuentaReq" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="01c8dec7-e0c9-4394-98d2-2b18605a2979" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="CB.ConsumoWCF.Esquemas.CuentaBancariaReq" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1970d012-9286-4f3b-b7d4-9ab64f35e0d8" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CuentaResp" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="5e29e7f2-7689-4943-a170-643ba5e27369" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="CB.ConsumoWCF.Esquemas.CuentaBancariaResp" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="18539479-9faf-4160-8580-fc6613d5dc06" ParentLink="Module_MessageType" LowerBound="20.1" HigherBound="24.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FaultMessageType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="639313bf-8791-47d9-925b-796046b45678" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="ClassName" Value="BTS.soap_envelope_1__1.Fault" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart_1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="d382c5e3-493a-44f5-ad20-0eb970abd04c" ParentLink="Module_ServiceDeclaration" LowerBound="38.1" HigherBound="129.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;ServiciosBancarios&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ServiciosBancariosClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="2540ede3-2bab-4f76-964f-98446ab7ba46" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="51.1" HigherBound="52.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CodError" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2c91a707-571b-44f7-aa30-8bcac8f910a2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="52.1" HigherBound="53.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Mensaje" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="63b24987-cd9d-42c6-8721-a22af110ed19" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="53.1" HigherBound="54.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="XMLMensaje" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a2fb911d-a7e8-406e-b41c-c26fcb1f4192" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="46.1" HigherBound="47.1">
+                <om:Property Name="Type" Value="CB.ConsumoWCF.Orquestaciones.CuentaReq" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CuentaReqMsj" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="72dc984b-d407-49cd-8d8d-4a0747032de5" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="47.1" HigherBound="48.1">
+                <om:Property Name="Type" Value="CB.ConsumoWCF.Orquestaciones.CuentaResp" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CuentaRespMsj" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e6e62a74-5909-439a-a21f-538a61a07350" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="48.1" HigherBound="49.1">
+                <om:Property Name="Type" Value="CB.ConsumoWCF.Orquestaciones.IServiciosBancarios_ObtenerCuentasPorCliente_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CuentaWCFReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="94e42a47-4d18-4f77-9744-133c20b80303" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="49.1" HigherBound="50.1">
+                <om:Property Name="Type" Value="CB.ConsumoWCF.Orquestaciones.IServiciosBancarios_ObtenerCuentasPorCliente_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CuentaWCFResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a8b66f02-178b-4f7f-9d6b-d2d4162d2fbd" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="50.1" HigherBound="51.1">
+                <om:Property Name="Type" Value="CB.ConsumoWCF.Orquestaciones.FaultMessageType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultMsj" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="deff61ca-f610-4995-9626-ccc9106a2064" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="2368dad6-be14-4e9b-a521-c4db98832f39" ParentLink="ServiceBody_Statement" LowerBound="56.1" HigherBound="61.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="CuentaServicePort" />
+                    <om:Property Name="MessageName" Value="CuentaReqMsj" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_EntradaServicio" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="92f66350-0556-4d57-82ac-91f918f6b69d" ParentLink="ServiceBody_Statement" LowerBound="61.1" HigherBound="125.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="c11f5cce-459e-4a12-bf99-4b48ec915c52" ParentLink="ComplexStatement_Statement" LowerBound="66.1" HigherBound="72.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_CuentaWCDReq" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="3bec328d-ffb0-49bc-8f8b-cbe065e86fb7" ParentLink="ComplexStatement_Statement" LowerBound="69.1" HigherBound="71.1">
+                            <om:Property Name="ClassName" Value="CB.ConsumoWCF.Mapas.CuentaReq_ObtenerCuentaPorCliente" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_CuentaReq" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="0eaf138e-2e65-4957-974d-e9f8adef455f" ParentLink="Transform_InputMessagePartRef" LowerBound="70.118" HigherBound="70.135">
+                                <om:Property Name="MessageRef" Value="CuentaReqMsj" />
+                                <om:Property Name="PartRef" Value="Body" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="36e88d82-d962-4a85-886c-896f87668b11" ParentLink="Transform_OutputMessagePartRef" LowerBound="70.36" HigherBound="70.59">
+                                <om:Property Name="MessageRef" Value="CuentaWCFReq" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="26e79e8e-5115-4618-b7c2-1a48caeae75b" ParentLink="Construct_MessageRef" LowerBound="67.31" HigherBound="67.43">
+                            <om:Property Name="Ref" Value="CuentaWCFReq" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="4bc8416c-3b01-496a-83af-d195b32aec5b" ParentLink="ComplexStatement_Statement" LowerBound="72.1" HigherBound="74.1">
+                        <om:Property Name="PortName" Value="CuentaWCFPort" />
+                        <om:Property Name="MessageName" Value="CuentaWCFReq" />
+                        <om:Property Name="OperationName" Value="ObtenerCuentasPorCliente" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Snd_CuentaReqWCF" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="0382f508-4eba-47ec-9165-db0f5ad071c6" ParentLink="ComplexStatement_Statement" LowerBound="74.1" HigherBound="76.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="CuentaWCFPort" />
+                        <om:Property Name="MessageName" Value="CuentaWCFResp" />
+                        <om:Property Name="OperationName" Value="ObtenerCuentasPorCliente" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rcv_CuentaRespWCF" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="54365dba-7177-413d-8250-432761595bf7" ParentLink="ComplexStatement_Statement" LowerBound="76.1" HigherBound="82.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructCuentaResp" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="825fa60f-6d0a-41fe-8ab4-61271753961a" ParentLink="ComplexStatement_Statement" LowerBound="79.1" HigherBound="81.1">
+                            <om:Property Name="ClassName" Value="CB.ConsumoWCF.Mapas.ObtenerCuentaPorClienteResponse_CuentaResp" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="5b6cd257-929d-43bd-a7b5-169e70520a1b" ParentLink="Transform_InputMessagePartRef" LowerBound="80.122" HigherBound="80.146">
+                                <om:Property Name="MessageRef" Value="CuentaWCFResp" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="0bcfd000-67e1-4df5-8546-d58bbc7f95f4" ParentLink="Transform_OutputMessagePartRef" LowerBound="80.36" HigherBound="80.54">
+                                <om:Property Name="MessageRef" Value="CuentaRespMsj" />
+                                <om:Property Name="PartRef" Value="Body" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="c8e7c673-103c-46d4-9750-70c13f935f4d" ParentLink="Construct_MessageRef" LowerBound="77.31" HigherBound="77.44">
+                            <om:Property Name="Ref" Value="CuentaRespMsj" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="67573291-f8b4-47fe-8313-382c416ae9ac" ParentLink="ComplexStatement_Statement" LowerBound="82.1" HigherBound="88.1">
+                        <om:Property Name="Expression" Value="CodError = CuentaRespMsj.Body.Resultado.CodMensaje;&#xD;&#xA;Mensaje = CuentaRespMsj.Body.Resultado.Mensaje;&#xD;&#xA;if(!CodError.Equals(&quot;0&quot;)){&#xD;&#xA;    throw new CursoBizTalk.Utilidades.CustomException(CodError,Mensaje);&#xD;&#xA;}" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Excepcion de Negocio" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="1c94ddc4-d22c-445e-adf4-1e423c4927f7" ParentLink="Scope_Catch" LowerBound="91.1" HigherBound="107.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchGenerica" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="996666cf-6acd-4e32-8f4f-d8ed4acab75d" ParentLink="Catch_Statement" LowerBound="94.1" HigherBound="96.1">
+                            <om:Property Name="Expression" Value="CursoBizTalk.Utilidades.Utils.WriteLog(&quot;Excepcion General:  Error:&quot; + ex.ToString()); " />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="55affe0f-90b0-447f-8fd2-59e7695cc6e4" ParentLink="Catch_Statement" LowerBound="96.1" HigherBound="106.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="0471ee6d-aa6b-4075-aa67-3a45cec7a98b" ParentLink="ComplexStatement_Statement" LowerBound="99.1" HigherBound="102.1">
+                                <om:Property Name="Expression" Value="XMLMensaje.LoadXml(&quot;&lt;ns0:CuentaBancariaResp xmlns:ns0=\&quot;http://CB.ConsumoWCF.Esquemas.CuentaBancariaResp\&quot;&gt;&lt;Resultado&gt;&lt;CodMensaje&gt;&lt;/CodMensaje&gt;&lt;Mensaje&gt;&lt;/Mensaje&gt;&lt;/Resultado&gt;&lt;/ns0:CuentaBancariaResp&gt;&quot;);&#xD;&#xA;CuentaRespMsj.Body = XMLMensaje;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="15cae6b9-f5b7-4115-896c-87b5a3e259ce" ParentLink="ComplexStatement_Statement" LowerBound="102.1" HigherBound="105.1">
+                                <om:Property Name="Expression" Value="CuentaRespMsj.Body.Resultado.CodMensaje = &quot;900&quot;;&#xD;&#xA;CuentaRespMsj.Body.Resultado.Mensaje =  ex.ToString();" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_2" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="1b2fce8c-3503-4337-83a9-8546b58ce376" ParentLink="Construct_MessageRef" LowerBound="97.35" HigherBound="97.48">
+                                <om:Property Name="Ref" Value="CuentaRespMsj" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="d979d52d-a2f0-45df-a447-0a64cb3d9305" ParentLink="Scope_Catch" LowerBound="107.1" HigherBound="123.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="CursoBizTalk.Utilidades.CustomException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchNegocio" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="7b78fd08-cde7-4aca-9a51-df1043e40a6a" ParentLink="Catch_Statement" LowerBound="110.1" HigherBound="112.1">
+                            <om:Property Name="Expression" Value="CursoBizTalk.Utilidades.Utils.WriteLog(&quot;Excepción de Negocio &quot;+ ex.CodigoError + &quot; Error:&quot; + ex.Mensaje); " />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="334ada4d-a748-4a07-a267-c73b0701533c" ParentLink="Catch_Statement" LowerBound="112.1" HigherBound="122.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_2" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="85f2f86b-d84a-485a-99a2-7b105d861689" ParentLink="ComplexStatement_Statement" LowerBound="115.1" HigherBound="118.1">
+                                <om:Property Name="Expression" Value="XMLMensaje.LoadXml(&quot;&lt;ns0:CuentaBancariaResp xmlns:ns0=\&quot;http://CB.ConsumoWCF.Esquemas.CuentaBancariaResp\&quot;&gt;&lt;Resultado&gt;&lt;CodMensaje&gt;&lt;/CodMensaje&gt;&lt;Mensaje&gt;&lt;/Mensaje&gt;&lt;/Resultado&gt;&lt;/ns0:CuentaBancariaResp&gt;&quot;);&#xD;&#xA;CuentaRespMsj.Body = XMLMensaje;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="46f20be9-2e05-4c7c-b50a-438e63f3a55a" ParentLink="ComplexStatement_Statement" LowerBound="118.1" HigherBound="121.1">
+                                <om:Property Name="Expression" Value="CuentaRespMsj.Body.Resultado.CodMensaje = ex.CodigoError;&#xD;&#xA;CuentaRespMsj.Body.Resultado.Mensaje =  ex.Mensaje.ToString();" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_3" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="09c3ab89-3765-45e3-b04a-501305764320" ParentLink="Construct_MessageRef" LowerBound="113.35" HigherBound="113.48">
+                                <om:Property Name="Ref" Value="CuentaRespMsj" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="f4851ac9-2a97-496a-b8fe-b61e6751b936" ParentLink="ServiceBody_Statement" LowerBound="125.1" HigherBound="127.1">
+                    <om:Property Name="PortName" Value="CuentaServicePort" />
+                    <om:Property Name="MessageName" Value="CuentaRespMsj" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_RespuestaServicio" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0663b6d6-31b2-48b8-9b86-58d2d8211a54" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="41.1" HigherBound="43.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CB.ConsumoWCF.Orquestaciones.CuentaServicePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CuentaServicePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="4cc27817-8bd1-42ac-8c02-e1ed0ca015c5" ParentLink="PortDeclaration_CLRAttribute" LowerBound="41.1" HigherBound="42.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ca596a50-6c3f-4e8a-87cd-dfb227409a77" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="43.1" HigherBound="46.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="15" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="Transmitted" />
+                <om:Property Name="Type" Value="CB.ConsumoWCF.Orquestaciones.IServiciosBancarios" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CuentaWCFPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="43f2bea5-8b83-4475-8e42-abc264972ace" ParentLink="PortDeclaration_CLRAttribute" LowerBound="43.1" HigherBound="44.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module CB.ConsumoWCF.Orquestaciones
+{
+    internal messagetype IServiciosBancarios_ObtenerCuentasPorCliente_InputMessage
+    {
+        body CB.ConsumoWCF.Esquemas.ServiciosBancarios_tempuri_org.ObtenerCuentasPorCliente parameters;
+    };
+    internal messagetype IServiciosBancarios_ObtenerCuentasPorCliente_OutputMessage
+    {
+        body CB.ConsumoWCF.Esquemas.ServiciosBancarios_tempuri_org.ObtenerCuentasPorClienteResponse parameters;
+    };
+    internal messagetype CuentaReq
+    {
+        body CB.ConsumoWCF.Esquemas.CuentaBancariaReq Body;
+    };
+    internal messagetype CuentaResp
+    {
+        body CB.ConsumoWCF.Esquemas.CuentaBancariaResp Body;
+    };
+    internal messagetype FaultMessageType
+    {
+        body BTS.soap_envelope_1__1.Fault MessagePart_1;
+    };
+    internal porttype IServiciosBancarios
+    {
+        requestresponse ObtenerCuentasPorCliente
+        {
+            IServiciosBancarios_ObtenerCuentasPorCliente_InputMessage, IServiciosBancarios_ObtenerCuentasPorCliente_OutputMessage, Fault_1 = FaultMessageType
+        };
+    };
+    internal porttype CuentaServicePortType
+    {
+        requestresponse Operation_1
+        {
+            CuentaReq, CuentaResp
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ServiciosBancariosClient
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements CuentaServicePortType CuentaServicePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        [Microsoft.XLANGs.BaseTypes.DeliveryNotification(Microsoft.XLANGs.BaseTypes.DeliveryNotification.NotificationLevel.Transmitted)]
+        port uses IServiciosBancarios CuentaWCFPort;
+        message CuentaReq CuentaReqMsj;
+        message CuentaResp CuentaRespMsj;
+        message IServiciosBancarios_ObtenerCuentasPorCliente_InputMessage CuentaWCFReq;
+        message IServiciosBancarios_ObtenerCuentasPorCliente_OutputMessage CuentaWCFResp;
+        message FaultMessageType FaultMsj;
+        System.String CodError;
+        System.String Mensaje;
+        System.Xml.XmlDocument XMLMensaje;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2368dad6-be14-4e9b-a521-c4db98832f39")]
+            activate receive (CuentaServicePort.Operation_1, CuentaReqMsj);
+            CodError = "";
+            Mensaje = "";
+            XMLMensaje = new System.Xml.XmlDocument();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("92f66350-0556-4d57-82ac-91f918f6b69d")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c11f5cce-459e-4a12-bf99-4b48ec915c52")]
+                    construct CuentaWCFReq
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3bec328d-ffb0-49bc-8f8b-cbe065e86fb7")]
+                        transform (CuentaWCFReq.parameters) = CB.ConsumoWCF.Mapas.CuentaReq_ObtenerCuentaPorCliente (CuentaReqMsj.Body);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("4bc8416c-3b01-496a-83af-d195b32aec5b")]
+                    send (CuentaWCFPort.ObtenerCuentasPorCliente, CuentaWCFReq);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0382f508-4eba-47ec-9165-db0f5ad071c6")]
+                    receive (CuentaWCFPort.ObtenerCuentasPorCliente, CuentaWCFResp);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("54365dba-7177-413d-8250-432761595bf7")]
+                    construct CuentaRespMsj
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("825fa60f-6d0a-41fe-8ab4-61271753961a")]
+                        transform (CuentaRespMsj.Body) = CB.ConsumoWCF.Mapas.ObtenerCuentaPorClienteResponse_CuentaResp (CuentaWCFResp.parameters);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("67573291-f8b4-47fe-8313-382c416ae9ac")]
+                    CodError = CuentaRespMsj.Body.Resultado.CodMensaje;
+                    Mensaje = CuentaRespMsj.Body.Resultado.Mensaje;
+                    if(!CodError.Equals("0")){
+                        throw new CursoBizTalk.Utilidades.CustomException(CodError,Mensaje);
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1c94ddc4-d22c-445e-adf4-1e423c4927f7")]
+                    catch (System.Exception ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("996666cf-6acd-4e32-8f4f-d8ed4acab75d")]
+                        CursoBizTalk.Utilidades.Utils.WriteLog("Excepcion General:  Error:" + ex.ToString()); 
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("55affe0f-90b0-447f-8fd2-59e7695cc6e4")]
+                        construct CuentaRespMsj
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0471ee6d-aa6b-4075-aa67-3a45cec7a98b")]
+                            XMLMensaje.LoadXml("<ns0:CuentaBancariaResp xmlns:ns0=\"http://CB.ConsumoWCF.Esquemas.CuentaBancariaResp\"><Resultado><CodMensaje></CodMensaje><Mensaje></Mensaje></Resultado></ns0:CuentaBancariaResp>");
+                            CuentaRespMsj.Body = XMLMensaje;
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("15cae6b9-f5b7-4115-896c-87b5a3e259ce")]
+                            CuentaRespMsj.Body.Resultado.CodMensaje = "900";
+                            CuentaRespMsj.Body.Resultado.Mensaje =  ex.ToString();
+                        }
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d979d52d-a2f0-45df-a447-0a64cb3d9305")]
+                    catch (CursoBizTalk.Utilidades.CustomException ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7b78fd08-cde7-4aca-9a51-df1043e40a6a")]
+                        CursoBizTalk.Utilidades.Utils.WriteLog("Excepción de Negocio "+ ex.CodigoError + " Error:" + ex.Mensaje); 
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("334ada4d-a748-4a07-a267-c73b0701533c")]
+                        construct CuentaRespMsj
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("85f2f86b-d84a-485a-99a2-7b105d861689")]
+                            XMLMensaje.LoadXml("<ns0:CuentaBancariaResp xmlns:ns0=\"http://CB.ConsumoWCF.Esquemas.CuentaBancariaResp\"><Resultado><CodMensaje></CodMensaje><Mensaje></Mensaje></Resultado></ns0:CuentaBancariaResp>");
+                            CuentaRespMsj.Body = XMLMensaje;
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("46f20be9-2e05-4c7c-b50a-438e63f3a55a")]
+                            CuentaRespMsj.Body.Resultado.CodMensaje = ex.CodigoError;
+                            CuentaRespMsj.Body.Resultado.Mensaje =  ex.Mensaje.ToString();
+                        }
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f4851ac9-2a97-496a-b8fe-b61e6751b936")]
+            send (CuentaServicePort.Operation_1, CuentaRespMsj);
+        }
+    }
+}
+

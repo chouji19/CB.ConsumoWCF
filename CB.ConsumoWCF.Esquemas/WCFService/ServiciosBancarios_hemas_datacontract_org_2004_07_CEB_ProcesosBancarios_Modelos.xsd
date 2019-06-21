@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CEB.ProcesosBancarios.Modelos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CEB.ProcesosBancarios.Modelos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Identificacion" nillable="true" type="tns:Identificacion" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cliente" nillable="true" type="tns:Cliente" />
+  <xs:complexType name="Identificacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TipoId" type="xs:int" />
+      <xs:element minOccurs="0" name="NumeroIdentificacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Identificacion" nillable="true" type="tns:Identificacion" />
+  <xs:complexType name="CuentaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Resultado" nillable="true" type="tns:StatusProceso" />
+      <xs:element minOccurs="0" name="cliente" nillable="true" type="tns:Cliente" />
+      <xs:element minOccurs="0" name="Cuentas" nillable="true" type="tns:ArrayOfCuenta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CuentaResponse" nillable="true" type="tns:CuentaResponse" />
+  <xs:complexType name="StatusProceso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodRespuesta" type="xs:int" />
+      <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StatusProceso" nillable="true" type="tns:StatusProceso" />
+  <xs:complexType name="ArrayOfCuenta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cuenta" nillable="true" type="tns:Cuenta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCuenta" nillable="true" type="tns:ArrayOfCuenta" />
+  <xs:complexType name="Cuenta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SaldoActual" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TipoCuenta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="activa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdCuenta" type="xs:int" />
+      <xs:element minOccurs="0" name="NumeroCuenta" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cuenta" nillable="true" type="tns:Cuenta" />
+</xs:schema>
